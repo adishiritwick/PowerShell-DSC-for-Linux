@@ -283,6 +283,7 @@ def get_cert_info(certificate_path):
 @posix_only
 def get_cert_info_with_dates(certificate_path):
     """Gets certificate information by invoking OpenSSL (OMS agent dependency).
+    
     Returns:
         A tuple containing the certificate's issuer, subject and thumbprint, start date and end date.
     """

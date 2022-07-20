@@ -301,6 +301,7 @@ def get_cert_info_with_dates(certificate_path):
     Returns:
         A tuple containing the certificate's issuer, subject, thumbprint, start date and end date.
     """
+
     p = subprocess.Popen(["openssl", "x509", "-noout", "-in", certificate_path, "-fingerprint", "-sha1"],
                          stdout=subprocess.PIPE,
                          stderr=subprocess.PIPE)
